@@ -10,14 +10,15 @@ import {
   YELLOWHIGHLIGHTER,
 } from './colors';
 import { Bounce } from './spring/Bounce';
+import image from './images/IMG_0330.png';
 
 function App() {
   return (
     <div className="mx-auto max-w-screen-lg">
       <Navigation />
-      <div>
+      <div className="flex">
         <Bounce>
-          <div className="pl-10 mt-40 text-6xl font-black">
+          <div className="pl-10 mt-40 text-6xl font-black w-7/12">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
@@ -108,7 +109,7 @@ function App() {
                 in a SCRUM environment.
               </p>
               <p className="mt-5">
-                I am always looking for great opportunities so if you want to connect click
+                I am always looking for great opportunities, so if you want to connect, click
                 <RoughNotation
                   type="underline"
                   animationDelay={9000}
@@ -119,12 +120,15 @@ function App() {
                   padding={5}
                   color={BLUEV2HIGHLIGHTER}
                 >
-                  <a href="https://www.linkedin.com/in/aidenfine/" target="_blank">
+                  <a href="https://www.linkedin.com/in/aidenfine/" rel="noreferrer" target="_blank">
                     {' '}
                     here{' '}
                   </a>
                 </RoughNotation>
               </p>
+            </div>
+            <div>
+              <img src={image} alt="yoo" className="ml-5 pl-10 object-cover h-96 rounded-sm" />
             </div>
           </div>
         </Bounce>
