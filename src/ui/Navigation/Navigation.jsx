@@ -15,13 +15,7 @@ const Navigation = () => {
       </div>
       <div className="space-x-4">
         <UnderlineOnHover>
-          <a href="#">About</a>
-        </UnderlineOnHover>
-        <UnderlineOnHover>
-          <a href="#">Blog</a>
-        </UnderlineOnHover>
-        <UnderlineOnHover>
-          <a href="#">Projects</a>
+          <a href="#">Profile</a>
         </UnderlineOnHover>
         <UnderlineOnHover>
           <a href="#">Contact</a>
