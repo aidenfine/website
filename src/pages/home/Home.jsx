@@ -14,6 +14,7 @@ import image from '../../images/IMG_0330.png';
 import HdContractingImg from '../../images/dashboard-hd.png';
 import pendoDashboardImg from '../../images/pendoDashboard.png';
 import streametricV2Dashboard from '../../images/streametricv2Dashboard.png';
+import { Footer } from '../../ui/footer/Footer';
 
 export const Home = () => {
   const navigate = useNavigate();
@@ -48,7 +49,7 @@ export const Home = () => {
           <div className="flex pl-10 pt-5">
             <div className="text-xl w-7/12">
               <p>
-                Hello, I'm Aiden Fine, a
+                👋 Hello, I'm Aiden Fine, a
                 <RoughNotation
                   type="highlight"
                   multiline={true}
@@ -150,9 +151,29 @@ export const Home = () => {
       </div>
       {/* THIS IS SECTION 2 OF HOME PAGE */}
       <Bounce delay={800}>
-        <div className="pl-10 pt-5 pt-20">
+        <div className="pl-10 pt-20">
           <h1 className="text-3xl font-bold">My Work</h1>
           <div className="grid grid-cols-1 gap 6 pt-10">
+            <div className="flex flex-col items-center ">
+              <div className="shadow-lg">
+                <img
+                  src={HdContractingImg}
+                  alt="HD Contracting Dashboard"
+                  className="object-cover rounded-md shadow-lg cursor-pointer"
+                  onClick={project2ImgClick}
+                />
+              </div>
+              <div className="mt-2 text-center">
+                <h2 className="text-xl font-semibold">HD Contracting Dashboard</h2>
+                <p className="text-m text-gray-500">
+                  Full Stack Application built to help a local business manage their everyday needs{' '}
+                </p>
+                <p className="text-xs text-gray-500 pt-1.5">Click the image above to learn more </p>
+              </div>
+            </div>
+
+            <div className="border border-gray-300 h-px flex-grow mt-5 mb-5"></div>
+
             <div className="flex flex-col items-center ">
               <div className="shadow-lg">
                 <img
@@ -167,26 +188,6 @@ export const Home = () => {
                 <p className="text-m text-gray-500">
                   I setup Pendo to track user activity enabling better support for the business by
                   gaining insight into user behavior to optimize their experience
-                </p>
-                <p className="text-xs text-gray-500 pt-1.5">Click the image above to learn more </p>
-              </div>
-            </div>
-
-            <div className="border border-gray-300 h-px flex-grow mt-5 mb-5"></div>
-
-            <div className="flex flex-col items-center ">
-              <div className="shadow-lg">
-                <img
-                  src={HdContractingImg}
-                  alt="HD Contracting Dashboard"
-                  className="object-cover rounded-md shadow-lg cursor-pointer"
-                  onClick={project2ImgClick}
-                />
-              </div>
-              <div className="mt-2 text-center">
-                <h2 className="text-xl font-semibold">HD Contracting Dashboard</h2>
-                <p className="text-m text-gray-500">
-                  Full Stack Application built to help a local business manage their everyday needs{' '}
                 </p>
                 <p className="text-xs text-gray-500 pt-1.5">Click the image above to learn more </p>
               </div>
@@ -215,6 +216,7 @@ export const Home = () => {
           </div>
         </div>
       </Bounce>
+      <Footer />
     </div>
   );
 };
