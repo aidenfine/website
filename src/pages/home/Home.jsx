@@ -158,7 +158,7 @@ export const Home = () => {
                 <img
                   src={pendoDashboardImg}
                   alt="Pendo"
-                  className="object-cover rounded-md shadow-lg"
+                  className="object-cover rounded-md shadow-lg cursor-pointer"
                   onClick={project1ImgClick}
                 />
               </div>
@@ -179,7 +179,7 @@ export const Home = () => {
                 <img
                   src={HdContractingImg}
                   alt="HD Contracting Dashboard"
-                  className="object-cover rounded-md shadow-lg"
+                  className="object-cover rounded-md shadow-lg cursor-pointer"
                   onClick={project2ImgClick}
                 />
               </div>
@@ -199,7 +199,7 @@ export const Home = () => {
                 <img
                   src={streametricV2Dashboard}
                   alt="Streametric"
-                  className="object-cover rounded-md shadow-lg"
+                  className="object-cover rounded-md shadow-lg cursor-pointer"
                   onClick={project2ImgClick}
                 />
               </div>
