@@ -20,7 +20,8 @@ export const HdContractingPage = () => {
         <div className="mt-7 text-4xl font-black w-7/12 tracking-wide">
           HD Contracting Dashboard
         </div>
-        <p className="text-xl pt-10">
+        <h2 className="pt-5 text-3xl font-bold">Intro</h2>
+        <p className="text-xl">
           This dashboard was custom made for a local business that specializes in contracting, they
           were tired of using many different websites for the tools they needed. So I offered to
           build them a full stack application for their needs. This site was built from scratch
@@ -28,8 +29,8 @@ export const HdContractingPage = () => {
           took me three to four months working as the only developer while also in school and
           working my software engineer internship.
         </p>
-        <h2 className="pt-10 text-3xl font-bold">The Big Focus</h2>
-        <p className="text-xl pt-10">
+        <h2 className="pt-5 text-3xl font-bold">The Big Focus</h2>
+        <p className="text-xl">
           Getting the features the business owner wants while also keeping the website secure was my
           biggest concern. I wanted the owner to have all the features he needed and while I did run
           into many issues when trying to get these features deployed I ended up using my problem
@@ -51,8 +52,8 @@ export const HdContractingPage = () => {
           </div>
         </div>
 
-        <h2 className="pt-10 text-3xl font-bold">What did I learn?</h2>
-        <p className="text-xl pt-10">
+        <h2 className="pt-5 text-3xl font-bold">What did I learn?</h2>
+        <p className="text-xl">
           This is something I always ask myself after every project is "What did I really learn from
           this?". That is the whole reason I picked this project up in the first place is to learn
           new things. So some of the things I learned is making a full stack application is a lot
