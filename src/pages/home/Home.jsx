@@ -134,7 +134,7 @@ export const Home = () => {
                 >
                   <a href="https://www.linkedin.com/in/aidenfine/" rel="noreferrer" target="_blank">
                     {' '}
-                    here{' '}
+                    here!{' '}
                   </a>
                 </RoughNotation>
               </p>
