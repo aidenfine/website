@@ -13,7 +13,7 @@ const Navigation = () => {
         {' '}
         Aiden Fine
       </div>
-      <div className="space-x-4 sm:space-x-1 ">
+      <div className="space-x-4 md:space-x-2 lg:space-x-4 xl:space-x-4 ">
         <UnderlineOnHover>
           <a href="/profile">Profile</a>
         </UnderlineOnHover>

@@ -14,12 +14,16 @@ export const HomeSection2 = () => {
   const project1ImgClick = () => {
     navigate('/project-pendoDashboard');
   };
+  const project3ImgClick = () => {
+    navigate('/project-streametricv2');
+  };
+
   return (
     <Bounce delay={800}>
-      <div className="pl-10 pt-20">
+      <div className="pl-5 pt-10 md:pr-10 sm:pr-10 md:pl-10">
         <h1 className="text-3xl font-bold">My Work</h1>
-        <div className="grid grid-cols-1 gap 6 pt-10">
-          <div className="flex flex-col items-center ">
+        <div className="grid grid-cols-1 gap-6 pt-5 md:pt-10">
+          <div className="flex flex-col items-center">
             <div className="shadow-lg">
               <img
                 src={HdContractingImg}
@@ -31,15 +35,15 @@ export const HomeSection2 = () => {
             <div className="mt-2 text-center">
               <h2 className="text-xl font-semibold">HD Contracting Dashboard</h2>
               <p className="text-m text-gray-500">
-                Full Stack Application built to help a local business manage their everyday needs{' '}
+                Full Stack Application built to help a local business manage their everyday needs
               </p>
-              <p className="text-xs text-gray-500 pt-1.5">Click the image above to learn more </p>
+              <p className="text-xs text-gray-500 pt-1.5">Click the image above to learn more</p>
             </div>
           </div>
 
           <div className="border border-gray-300 h-px flex-grow mt-5 mb-5"></div>
 
-          <div className="flex flex-col items-center ">
+          <div className="flex flex-col items-center">
             <div className="shadow-lg">
               <img
                 src={pendoDashboardImg}
@@ -54,28 +58,27 @@ export const HomeSection2 = () => {
                 I setup Pendo to track user activity enabling better support for the business by
                 gaining insight into user behavior to optimize their experience
               </p>
-              <p className="text-xs text-gray-500 pt-1.5">Click the image above to learn more </p>
+              <p className="text-xs text-gray-500 pt-1.5">Click the image above to learn more</p>
             </div>
           </div>
 
           <div className="border border-gray-300 h-px flex-grow mt-5 mb-5"></div>
 
-          <div className="flex flex-col items-center ">
-            <div className="shadow-lg">
+          <div className="flex flex-col items-center">
+            <div className="shadow-lg md:pr-10">
               <img
                 src={streametricV2Dashboard}
                 alt="Streametric"
-                className="object-cover rounded-md shadow-lg cursor-pointer"
-                onClick={project2ImgClick}
+                className="object-cover rounded-md shadow-lg cursor-pointer md:object-fill"
+                onClick={project3ImgClick}
               />
             </div>
             <div className="mt-2 text-center">
               <h2 className="text-xl font-semibold">Streametric V2</h2>
               <p className="text-m text-gray-500">
-                {' '}
-                Contributed to many features that are provied in the Streametric V2 Version{' '}
+                Contributed to many features that are provided in the Streametric V2 Version
               </p>
-              <p className="text-xs text-gray-500 pt-1.5">Click the image above to learn more </p>
+              <p className="text-xs text-gray-500 pt-1.5">Click the image above to learn more</p>
             </div>
           </div>
         </div>
