@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSpring, animated } from '@react-spring/web';
 
-export const Bounce = ({ children }) => {
+export const Bounce = ({ children, delay }) => {
   const props = useSpring({
     from: {
       transform: 'translateY(100%)',
@@ -15,7 +15,7 @@ export const Bounce = ({ children }) => {
       tension: 200,
       friction: 20,
     },
-    delay: 500,
+    delay: delay,
   });
 
   return <animated.div style={props}>{children}</animated.div>;
