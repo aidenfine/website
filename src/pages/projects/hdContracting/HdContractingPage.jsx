@@ -2,10 +2,11 @@ import { Layout } from '../../../layout/Layout';
 import hdContractingImg from '../../../images/dashboard-hd.png';
 import customerTable from '../../../images/customerTable.png';
 import { Bounce } from '../../../spring/Bounce';
+import { Footer } from '../../../ui/footer/Footer';
 
 export const HdContractingPage = () => {
   return (
-    <div className="mx-auto max-w-screen-lg mb-40">
+    <div className="mx-auto max-w-screen-lg md:ml-10 md:mr-10">
       <Layout />
       <Bounce delay={300}>
         <div>
@@ -68,6 +69,7 @@ export const HdContractingPage = () => {
           much and would do it again.
         </p>
       </Bounce>
+      <Footer />
     </div>
   );
 };
