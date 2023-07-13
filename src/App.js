@@ -8,11 +8,13 @@ import { Profile } from './pages/profile/Profile';
 import { Contact } from './pages/Contact/Contact';
 import { Blog } from './pages/blog/Blog';
 import { WrittingOne } from './pages/blog/Writing/WritingOne';
+import ScrollToTop from './helpers/ScrollToTop';
 
 function App() {
   return (
     <div className="app">
       <BrowserRouter>
+      <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/profile" element={<Profile />} />
