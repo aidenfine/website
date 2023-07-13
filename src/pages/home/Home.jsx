@@ -16,6 +16,7 @@ import { HomeSection2 } from './HomeSection2';
 import { BounceFromSide } from '../../spring/BounceFromSide';
 
 export const Home = () => {
+  const isMobile = window.innerWidth <= 768;
   return (
     <div className="mx-auto max-w-screen-lg">
       <Navigation />
@@ -37,7 +38,7 @@ export const Home = () => {
             />
           </div>
           <div className="flex pl-10 pt-5">
-            <div className="text-xl w-7/12">
+            <div className="text-xl  xl:w-7/12 lg:w-7/12 lg:text-lg xl:text-xl md:text-sm sm:text-sm md:w-7 sm:w-full">
               <p>
                 👋 Hello, I'm Aiden Fine, a
                 <RoughNotation
@@ -129,15 +130,17 @@ export const Home = () => {
                 </RoughNotation>
               </p>
             </div>
-            <div>
-              <BounceFromSide delay={1000}>
-                <img
-                  src={image}
-                  alt="img of me "
-                  className="ml-5 pl-10 object-cover h-96 rounded-sm"
-                />
-              </BounceFromSide>
-            </div>
+            {!isMobile && (
+              <div className="mt-5 md:mt-0 md:pl-10">
+                <BounceFromSide delay={1000}>
+                  <img
+                    src={image}
+                    alt="img of me "
+                    className="ml-5 pl-10 object-cover h-96 rounded-sm"
+                  />
+                </BounceFromSide>
+              </div>
+            )}
           </div>
         </Bounce>
       </div>
