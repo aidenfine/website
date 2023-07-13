@@ -13,6 +13,7 @@ import { Bounce } from '../../spring/Bounce';
 import image from '../../images/IMG_0330.png';
 import { Footer } from '../../ui/footer/Footer';
 import { HomeSection2 } from './HomeSection2';
+import { BounceFromSide } from '../../spring/BounceFromSide';
 
 export const Home = () => {
   return (
@@ -129,11 +130,13 @@ export const Home = () => {
               </p>
             </div>
             <div>
-              <img
-                src={image}
-                alt="img of me "
-                className="ml-5 pl-10 object-cover h-96 rounded-sm"
-              />
+              <BounceFromSide delay={1000}>
+                <img
+                  src={image}
+                  alt="img of me "
+                  className="ml-5 pl-10 object-cover h-96 rounded-sm"
+                />
+              </BounceFromSide>
             </div>
           </div>
         </Bounce>

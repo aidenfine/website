@@ -1,19 +1,19 @@
 import React from 'react';
 import { useSpring, animated } from '@react-spring/web';
 
-export const Bounce = ({ children, delay }) => {
+export const BounceFromSide = ({ children, delay }) => {
   const props = useSpring({
     from: {
-      transform: 'translateY(100%)',
+      transform: 'translateX(100%)',
       opacity: 0,
     },
     to: {
-      transform: 'translateY(0%)',
+      transform: 'translateX(0%)',
       opacity: 1,
     },
     config: {
       tension: 200,
-      friction: 18,
+      friction: 12,
     },
     delay: delay,
   });
