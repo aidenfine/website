@@ -6,25 +6,25 @@ export const Footer = () => {
   return (
     <>
       <div className="border border-gray-300 h-px flex-grow mt-20 mb-5"></div>
-      <footer class="flex items-center justify-center mb-5 py-4">
-        <div class="flex items-center space-x-4">
+      <footer className="flex items-center justify-center mb-5 py-4">
+        <div className="flex items-center space-x-4">
           <a
             href="https://github.com/aidenfine"
             target="_blank"
-            class="flex items-center"
+            className="flex items-center"
             rel="noreferrer"
           >
             <img src={gitHubSvg} alt="img" />
-            <span class="ml-2 text-xs">GitHub</span>
+            <span className="ml-2 text-xs">GitHub</span>
           </a>
           <a
             href="https://www.linkedin.com/in/aidenfine/"
             target="_blank"
             rel="noreferrer"
-            class="flex items-center"
+            className="flex items-center"
           >
             <img src={LinkedIn} alt="img" />
-            <span class=" text-xs ml-2">Linkedin</span>
+            <span className=" text-xs ml-2">Linkedin</span>
           </a>
         </div>
       </footer>
