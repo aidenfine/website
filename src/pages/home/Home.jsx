@@ -15,7 +15,6 @@ import { Footer } from '../../ui/footer/Footer';
 import { HomeSection2 } from './HomeSection2';
 
 export const Home = () => {
-
   return (
     <div className="mx-auto max-w-screen-lg">
       <Navigation />

@@ -15,10 +15,10 @@ const Navigation = () => {
       </div>
       <div className="space-x-4">
         <UnderlineOnHover>
-          <a href="#">Profile</a>
+          <a href="/profile">Profile</a>
         </UnderlineOnHover>
         <UnderlineOnHover>
-          <a href="#">Contact</a>
+          <a href="/contact">Contact</a>
         </UnderlineOnHover>
       </div>
     </nav>
