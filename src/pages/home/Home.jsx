@@ -37,7 +37,7 @@ export const Home = () => {
               }}
             />
           </div>
-          <div className="flex pl-10 pt-5">
+          <div className="flex pl-10 pt-5 pr-10">
             <div className="text-xl  xl:w-7/12 lg:w-7/12 lg:text-lg xl:text-xl md:text-sm sm:text-sm md:w-7 sm:w-full">
               <p>
                 👋 Hello, I'm Aiden Fine, a
