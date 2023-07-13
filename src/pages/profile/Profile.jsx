@@ -5,6 +5,7 @@ import { Footer } from '../../ui/footer/Footer';
 import Typewriter from 'typewriter-effect';
 import { BLUEHIGHLIGHTER, PINKISHHIGHLIGHTER, YELLOWHIGHLIGHTER } from '../../colors';
 import pdf from '../../resume/AidenFineResume.pdf';
+import { BounceFromSide } from '../../spring/BounceFromSide';
 
 export const Profile = () => {
   const handleOpenPDF = () => {
@@ -40,18 +41,20 @@ export const Profile = () => {
           />
         </div>
         <div className="pl-10 text-lg cursor-pointer">
-          <RoughNotation
-            type="underline"
-            animationDelay={3000}
-            animationDuration={800}
-            show={true}
-            iterations={3}
-            strokeWidth={3}
-            padding={5}
-            color={PINKISHHIGHLIGHTER}
-          >
-            <span onClick={handleOpenPDF}>My Resume</span>
-          </RoughNotation>
+          <BounceFromSide delay={2200}>
+            <RoughNotation
+              type="underline"
+              animationDelay={3000}
+              animationDuration={800}
+              show={true}
+              iterations={3}
+              strokeWidth={3}
+              padding={5}
+              color={PINKISHHIGHLIGHTER}
+            >
+              <span onClick={handleOpenPDF}>My Resume</span>
+            </RoughNotation>
+          </BounceFromSide>
         </div>
         <div className="border border-gray-300 h-px flex-grow mt-5 mb-5"></div>
         <h1 className="pt-5 text-3xl font-bold pl-10">About me</h1>
@@ -107,6 +110,13 @@ export const Profile = () => {
             found what I truly love learning and haven't stopped furthering my skills, learning new
             best practices, technologies and more!
           </p>
+        </div>
+        <h1 className="pt-5 text-3xl font-bold pl-10">Job Experience</h1>
+        <div>
+          <h1 className="pl-10 pt-5 text-lg">STREAMETRIC - Software Engineer Intern</h1>
+          <p className="pl-16 text-md">( June 2022 - Current )</p>
+          <h1 className="pl-10 pt-5 text-lg">Domino's Pizza - Manager</h1>
+          <p className="pl-16 text-md">( August 2019 - June 2022 )</p>
         </div>
       </Bounce>
 
