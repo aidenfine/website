@@ -70,7 +70,7 @@ export const HomeSection2 = () => {
               />
             </div>
             <div className="mt-2 text-center">
-              <h2 className="text-xl font-semibold">Streamtric V2</h2>
+              <h2 className="text-xl font-semibold">Streametric V2</h2>
               <p className="text-m text-gray-500">
                 {' '}
                 Contributed to many features that are provied in the Streametric V2 Version{' '}
