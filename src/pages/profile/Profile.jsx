@@ -22,7 +22,7 @@ export const Profile = () => {
   };
 
   return (
-    <div className="mx-auto max-w-screen-lg">
+    <div className="mx-auto max-w-screen-lg md:ml-10 md:mr-10">
       <Layout />
       <Bounce delay={300}>
         <div className="pl-10 mt-40 text-6xl font-black w-7/12 tracking-wide">

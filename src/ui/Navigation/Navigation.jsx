@@ -20,6 +20,9 @@ const Navigation = () => {
         <UnderlineOnHover>
           <a href="/contact">Contact</a>
         </UnderlineOnHover>
+        <UnderlineOnHover>
+          <a href="/blog">Blog</a>
+        </UnderlineOnHover>
       </div>
     </nav>
   );
