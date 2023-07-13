@@ -9,12 +9,13 @@ import { Contact } from './pages/Contact/Contact';
 import { Blog } from './pages/blog/Blog';
 import { WrittingOne } from './pages/blog/Writing/WritingOne';
 import ScrollToTop from './helpers/ScrollToTop';
+import { NotFound } from './pages/not-found-404/NotFound';
 
 function App() {
   return (
     <div className="app">
       <BrowserRouter>
-      <ScrollToTop />
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/profile" element={<Profile />} />
@@ -24,6 +25,7 @@ function App() {
           <Route path="/project-pendoDashboard" element={<PendoPage />} />
           <Route path="/project-streametricv2" element={<StreametricV2 />} />
           <Route path="/blog/how-to-succeed-in-internship" element={<WrittingOne />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </div>

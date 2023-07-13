@@ -6,8 +6,14 @@ import Typewriter from 'typewriter-effect';
 import { BLUEHIGHLIGHTER, PINKISHHIGHLIGHTER, YELLOWHIGHLIGHTER } from '../../colors';
 import pdf from '../../resume/AidenFineResume.pdf';
 import { BounceFromSide } from '../../spring/BounceFromSide';
+import Lottie from 'lottie-react';
+import dev from '../../ui/animations/dev.json';
 
 export const Profile = () => {
+  const style = {
+    width: 300,
+    height: 300,
+  };
   const handleOpenPDF = () => {
     const pdfPath = pdf;
     fetch(pdfPath)
@@ -25,21 +31,28 @@ export const Profile = () => {
     <div className="mx-auto max-w-screen-lg md:ml-10 md:mr-10">
       <Layout />
       <Bounce delay={300}>
-        <div className="pl-10 mt-40 text-6xl font-black w-7/12 tracking-wide">
-          <Typewriter
-            onInit={(typewriter) => {
-              typewriter
-                .typeString('Aiden Fine')
-                .callFunction(() => {
-                  typewriter
-                    .pauseFor(3000)
-                    .deleteAll()
-                    .callFunction(() => {});
-                })
-                .start();
-            }}
-          />
+        <div className="pl-10 mt-20 flex items-center">
+          <div className="text-6xl font-black w-7/12 tracking-wide">
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter
+                  .typeString('Aiden Fine')
+                  .callFunction(() => {
+                    typewriter
+                      .pauseFor(3000)
+                      .deleteAll()
+                      .callFunction(() => {});
+                  })
+                  .start();
+              }}
+            />
+          </div>
+
+          <div className="pl-5 text-lg flex items-center">
+            <Lottie style={style} animationData={dev} loop />
+          </div>
         </div>
+        <div className="border border-gray-300 h-px flex-grow mt-5 mb-5"></div>
         <div className="pl-10 text-lg cursor-pointer">
           <BounceFromSide delay={2200}>
             <RoughNotation
@@ -54,9 +67,9 @@ export const Profile = () => {
             >
               <span onClick={handleOpenPDF}>My Resume</span>
             </RoughNotation>
+            <p className="cursor-default">Email: aiden03fine@gmail.com</p>
           </BounceFromSide>
         </div>
-        <div className="border border-gray-300 h-px flex-grow mt-5 mb-5"></div>
         <h1 className="pt-5 text-3xl font-bold pl-10">About me</h1>
         <div className="pl-10 pt-5 text-lg">
           <p>
