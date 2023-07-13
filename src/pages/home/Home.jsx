@@ -18,7 +18,7 @@ import { BounceFromSide } from '../../spring/BounceFromSide';
 export const Home = () => {
   const isMobile = window.innerWidth <= 768;
   return (
-    <div className="mx-auto max-w-screen-lg">
+    <div className="mx-auto max-w-screen-lg md:ml-10 md:mr-10">
       <Navigation />
       <div className="flex">
         <Bounce delay={400}>
@@ -37,7 +37,7 @@ export const Home = () => {
               }}
             />
           </div>
-          <div className="flex pl-10 pt-5">
+          <div className="flex pl-10 pt-5 pr-10">
             <div className="text-xl  xl:w-7/12 lg:w-7/12 lg:text-lg xl:text-xl md:text-sm sm:text-sm md:w-7 sm:w-full">
               <p>
                 👋 Hello, I'm Aiden Fine, a
