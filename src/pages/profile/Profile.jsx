@@ -10,6 +10,9 @@ import Lottie from 'lottie-react';
 import dev from '../../ui/animations/dev.json';
 
 export const Profile = () => {
+  const handleEmailClick = () => {
+    window.open('mailto:aiden03fine@gmail.com');
+  };
   const style = {
     width: 300,
     height: 300,
@@ -67,7 +70,13 @@ export const Profile = () => {
             >
               <span onClick={handleOpenPDF}>My Resume</span>
             </RoughNotation>
-            <p className="cursor-default">Email: aiden03fine@gmail.com</p>
+            <p onClick={handleEmailClick}>
+              Email:
+              <span onClick={handleEmailClick} className="text-blue-300">
+                {' '}
+                aiden03fine@gmail.com
+              </span>
+            </p>
           </BounceFromSide>
         </div>
         <h1 className="pt-5 text-3xl font-bold pl-10">About me</h1>
