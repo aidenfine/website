@@ -4,6 +4,7 @@ import customerTable from '../../../images/customerTable.png';
 import { Bounce } from '../../../spring/Bounce';
 import { Footer } from '../../../ui/footer/Footer';
 import { subTitle, text, title } from '../config';
+import { GoBackHome } from '../../../ui/back-home/GoBackHome';
 
 export const HdContractingPage = () => {
   return (
@@ -69,6 +70,7 @@ export const HdContractingPage = () => {
           much and would do it again.
         </p>
       </Bounce>
+      <GoBackHome />
       <Footer />
     </div>
   );

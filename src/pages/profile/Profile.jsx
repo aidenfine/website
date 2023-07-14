@@ -8,6 +8,7 @@ import pdf from '../../resume/AidenFineResume.pdf';
 import { BounceFromSide } from '../../spring/BounceFromSide';
 import Lottie from 'lottie-react';
 import dev from '../../ui/animations/dev.json';
+import { GoBackHome } from '../../ui/back-home/GoBackHome';
 
 export const Profile = () => {
   const handleEmailClick = () => {
@@ -141,7 +142,7 @@ export const Profile = () => {
           <p className="pl-16 text-md">( August 2019 - June 2022 )</p>
         </div>
       </Bounce>
-
+      <GoBackHome />
       <Footer />
     </div>
   );

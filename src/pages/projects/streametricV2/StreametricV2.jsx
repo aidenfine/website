@@ -7,6 +7,7 @@ import MangeAlarmButton from '../../../images/MangeAlarmBtn.png';
 import { BounceFromSide } from '../../../spring/BounceFromSide';
 import AlarmActive from '../../../images/alarmActive.png';
 import streametricDashboard from '../../../images/streametricv2Dashboard.png';
+import { GoBackHome } from '../../../ui/back-home/GoBackHome';
 
 export const StreametricV2 = () => {
   return (
@@ -69,6 +70,7 @@ export const StreametricV2 = () => {
           familiarized myself with the frontend so far.
         </p>
       </Bounce>
+      <GoBackHome />
       <Footer />
     </div>
   );
