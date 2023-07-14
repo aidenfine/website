@@ -4,6 +4,7 @@ import Meeting from '../../../images/MeetingReal.png';
 import ImposterSyndrome from '../../../images/Imposter-Syndrome.png';
 import Navigation from '../../../ui/Navigation/Navigation';
 import { Footer } from '../../../ui/footer/Footer';
+import { GoBackHome } from '../../../ui/back-home/GoBackHome';
 
 export const WrittingOne = () => {
   return (
@@ -82,6 +83,7 @@ export const WrittingOne = () => {
         </div>
       </div>
       <div>
+        <GoBackHome />
         <Footer />
       </div>
     </div>

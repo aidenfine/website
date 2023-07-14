@@ -5,7 +5,7 @@ import LinkedIn from '../../svgs/Linkedin.svg';
 export const Footer = () => {
   return (
     <>
-      <div className="border border-gray-300 h-px flex-grow mt-20 mb-5"></div>
+      <div className="border border-gray-300 h-px flex-grow mt-10 mb-5"></div>
       <footer className="flex items-center justify-center mb-5 py-4">
         <div className="flex items-center space-x-4">
           <a
