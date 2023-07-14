@@ -2,10 +2,13 @@ import { Title, subTitle, Text, Author } from '../StyleConfig';
 import CodeV2 from '../../../images/CodeV2.png';
 import Meeting from '../../../images/MeetingReal.png';
 import ImposterSyndrome from '../../../images/Imposter-Syndrome.png';
+import Navigation from '../../../ui/Navigation/Navigation';
+import { Footer } from '../../../ui/footer/Footer';
 
 export const WrittingOne = () => {
   return (
     <div className="mx-auto max-w-screen-lg md:ml-10 md:mr-10">
+      <Navigation />
       <div className="flex flex-col items-center mt-20">
         <div className="shadow-lg max-w">
           <img src={CodeV2} alt="Code" className="object-cover shadow-lg md:object-fill max-w " />
@@ -77,6 +80,9 @@ export const WrittingOne = () => {
             />
           </div>
         </div>
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );
