@@ -4,6 +4,7 @@ import { Footer } from '../../../ui/footer/Footer';
 import Pendo from '../../../images/pendp.jpeg';
 import { subTitle, text, title } from '../config';
 import Locked from '../../../images/Locked.jpg';
+import { GoBackHome } from '../../../ui/back-home/GoBackHome';
 
 export const PendoPage = () => {
   return (
@@ -67,6 +68,7 @@ export const PendoPage = () => {
           used in Streametric V1.
         </p>
       </Bounce>
+      <GoBackHome />
       <Footer />
     </div>
   );
