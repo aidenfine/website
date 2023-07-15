@@ -1,27 +1,22 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import { UnderlineOnHover } from '../onHover/UnderlineOnHover';
-import { useNavigate } from 'react-router-dom';
+
 const Navigation = () => {
-  const navigate = useNavigate();
-  const nameClick = () => {
-    navigate('/');
-  };
   return (
     <nav className="flex items-center justify-between text-black pt-4">
-      <div className="text-start text-xl font-bold cursor-pointer" onClick={nameClick}>
-        {' '}
-        Aiden Fine
+      <div className="text-start text-xl font-bold cursor-pointer">
+        <NavLink to="/">Aiden Fine</NavLink>
       </div>
       <div className="space-x-4 md:space-x-2 lg:space-x-4 xl:space-x-4 ">
         <UnderlineOnHover>
-          <a href="/profile">Profile</a>
+          <NavLink to="/profile">Profile</NavLink>
         </UnderlineOnHover>
         <UnderlineOnHover>
-          <a href="/contact">Contact</a>
+          <NavLink to="/contact">Contact</NavLink>
         </UnderlineOnHover>
         <UnderlineOnHover>
-          <a href="/blog">Blog</a>
+          <NavLink to="/blog">Blog</NavLink>
         </UnderlineOnHover>
       </div>
     </nav>
