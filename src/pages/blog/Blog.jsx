@@ -13,10 +13,10 @@ export const Blog = () => {
     navigate('/blog/how-to-succeed-in-internship');
   };
   return (
-    <div className="mx-auto max-w-screen-lg md:ml-10 md:mr-10">
+    <div className="max-w-screen-lg px-4 mx-auto">
       <Navigation />
       <Bounce>
-        <div className="pl-10 mt-40 text-6xl font-black w-7/12 tracking-wide">
+        <div className="w-7/12 pl-10 mt-40 text-6xl font-black tracking-wide">
           <Typewriter
             onInit={(typewriter) => {
               typewriter
@@ -30,7 +30,19 @@ export const Blog = () => {
         </div>
       </Bounce>
       <BounceFromSide delay={1000}>
-        <div className="grid grid-cols-2 pl-10 pt-10">
+        <div className="justify-center px-6 pt-10 lg:grid lg:grid-cols-2 lg:px-10">
+          <BlogCard
+            onC
+            title={'How to Succeed in Software Engineer Internship'}
+            description={
+              'I give tips to some new software engineer interns on some helpful tips so they can be the best they can be'
+            }
+            img={img1}
+            tagOne={'Software Engineer'}
+            tagTwo={'Engineering'}
+            tagThree={'Tech'}
+            onClick={blog1Click}
+          />
           <BlogCard
             onC
             title={'How to Succeed in Software Engineer Internship'}

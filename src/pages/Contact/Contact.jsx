@@ -6,10 +6,10 @@ import Typewriter from 'typewriter-effect';
 export const Contact = () => {
   const url = process.env.REACT_APP_FORM_URL;
   return (
-    <div className="mx-auto max-w-screen-lg md:ml-10 md:mr-10">
+    <div className="max-w-screen-lg px-4 mx-auto">
       <Layout />
-      <div className="pl-10 mt-20 flex items-center">
-        <div className="text-6xl font-black w-7/12 tracking-wide">
+      <div className="flex items-center pl-10 mt-20">
+        <div className="w-7/12 text-6xl font-black tracking-wide">
           <Typewriter
             onInit={(typewriter) => {
               typewriter
