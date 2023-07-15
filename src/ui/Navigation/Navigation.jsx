@@ -13,11 +13,12 @@ const Navigation = () => {
           <NavLink to="/profile">Profile</NavLink>
         </UnderlineOnHover>
         <UnderlineOnHover>
-          <NavLink to="/contact">Contact</NavLink>
-        </UnderlineOnHover>
-        <UnderlineOnHover>
           <NavLink to="/blog">Blog</NavLink>
         </UnderlineOnHover>
+        <UnderlineOnHover>
+          <NavLink to="/contact">Contact</NavLink>
+        </UnderlineOnHover>
+
       </div>
     </nav>
   );
