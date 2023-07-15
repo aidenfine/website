@@ -11,6 +11,13 @@ import dev from '../../ui/animations/dev.json';
 import { GoBackHome } from '../../ui/back-home/GoBackHome';
 
 export const Profile = () => {
+  const isMobile = window.innerWidth <= 768;
+  let show = true;
+  if (isMobile) {
+    show = false;
+  } else {
+    show = true;
+  }
   const handleEmailClick = () => {
     window.open('mailto:aiden03fine@gmail.com');
   };
@@ -32,11 +39,11 @@ export const Profile = () => {
   };
 
   return (
-    <div className="mx-auto max-w-screen-lg md:ml-10 md:mr-10">
+    <div className="max-w-screen-lg px-4 mx-auto">
       <Layout />
       <Bounce delay={300}>
-        <div className="pl-10 mt-20 flex items-center">
-          <div className="text-6xl font-black w-7/12 tracking-wide">
+        <div className="flex items-center pl-10 mt-20">
+          <div className="w-7/12 text-6xl font-black tracking-wide">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
@@ -52,25 +59,29 @@ export const Profile = () => {
             />
           </div>
 
-          <div className="pl-5 text-lg flex items-center">
-            <Lottie style={style} animationData={dev} loop />
-          </div>
+          {!isMobile && (
+            <div className="flex items-center pl-5 text-lg">
+              <Lottie style={style} animationData={dev} loop />
+            </div>
+          )}
         </div>
-        <div className="border border-gray-300 h-px flex-grow mt-5 mb-5"></div>
+        <div className="flex-grow h-px mt-5 mb-5 border border-gray-300"></div>
         <div className="pl-10 text-lg cursor-pointer">
           <BounceFromSide delay={2200}>
-            <RoughNotation
-              type="underline"
-              animationDelay={3000}
-              animationDuration={800}
-              show={true}
-              iterations={3}
-              strokeWidth={3}
-              padding={5}
-              color={PINKISHHIGHLIGHTER}
-            >
-              <span onClick={handleOpenPDF}>My Resume</span>
-            </RoughNotation>
+            {!isMobile && (
+              <RoughNotation
+                type="underline"
+                animationDelay={3000}
+                animationDuration={800}
+                show={show}
+                iterations={3}
+                strokeWidth={3}
+                padding={5}
+                color={PINKISHHIGHLIGHTER}
+              >
+                <span onClick={handleOpenPDF}>My Resume</span>
+              </RoughNotation>
+            )}
             <p onClick={handleEmailClick}>
               Email:
               <span onClick={handleEmailClick} className="text-blue-300">
@@ -80,15 +91,15 @@ export const Profile = () => {
             </p>
           </BounceFromSide>
         </div>
-        <h1 className="pt-5 text-3xl font-bold pl-10">About me</h1>
-        <div className="pl-10 pt-5 text-lg">
+        <h1 className="pt-5 pl-10 text-3xl font-bold">About me</h1>
+        <div className="pt-5 pl-10 text-lg">
           <p>
             I am a 19 year old software engineer from the Raleigh, NC area.
             <RoughNotation
               type="highlight"
               animationDelay={4000}
               animationDuration={800}
-              show={true}
+              show={show}
               iterations={2}
               strokeWidth={3}
               padding={5}
@@ -105,7 +116,7 @@ export const Profile = () => {
               type="highlight"
               animationDelay={5000}
               animationDuration={800}
-              show={true}
+              show={show}
               iterations={1}
               strokeWidth={3}
               padding={5}
@@ -118,7 +129,7 @@ export const Profile = () => {
               type="highlight"
               animationDelay={5000}
               animationDuration={800}
-              show={true}
+              show={show}
               iterations={1}
               strokeWidth={3}
               padding={5}
@@ -134,11 +145,11 @@ export const Profile = () => {
             best practices, technologies and more!
           </p>
         </div>
-        <h1 className="pt-5 text-3xl font-bold pl-10">Job Experience</h1>
+        <h1 className="pt-5 pl-10 text-3xl font-bold">Job Experience</h1>
         <div>
-          <h1 className="pl-10 pt-5 text-lg">STREAMETRIC - Software Engineer Intern</h1>
+          <h1 className="pt-5 pl-10 text-lg">STREAMETRIC - Software Engineer Intern</h1>
           <p className="pl-16 text-md">( June 2022 - Current )</p>
-          <h1 className="pl-10 pt-5 text-lg">Domino's Pizza - Manager</h1>
+          <h1 className="pt-5 pl-10 text-lg">Domino's Pizza - Manager</h1>
           <p className="pl-16 text-md">( August 2019 - June 2022 )</p>
         </div>
       </Bounce>

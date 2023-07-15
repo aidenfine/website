@@ -18,11 +18,11 @@ import { BounceFromSide } from '../../spring/BounceFromSide';
 export const Home = () => {
   const isMobile = window.innerWidth <= 768;
   return (
-    <div className="mx-auto max-w-screen-lg md:ml-10 md:mr-10">
+    <div className="max-w-screen-lg px-4 mx-auto">
       <Navigation />
       <div className="flex">
         <Bounce delay={400}>
-          <div className="pl-10 mt-40 text-6xl font-black w-7/12 tracking-wide">
+          <div className="w-7/12 pl-10 mt-40 text-6xl font-black tracking-wide">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
@@ -37,8 +37,8 @@ export const Home = () => {
               }}
             />
           </div>
-          <div className="flex pl-10 pt-5 pr-10">
-            <div className="text-xl  xl:w-7/12 lg:w-7/12 lg:text-lg xl:text-xl md:text-sm sm:text-sm md:w-7 sm:w-full">
+          <div className="flex pt-5 pl-10 pr-10">
+            <div className="text-xl xl:w-7/12 lg:w-7/12 lg:text-lg xl:text-xl md:text-sm sm:text-sm md:w-7 sm:w-full">
               <p>
                 👋 Hello, I'm Aiden Fine, a
                 <RoughNotation
@@ -136,7 +136,7 @@ export const Home = () => {
                   <img
                     src={image}
                     alt="img of me "
-                    className="ml-5 pl-10 object-cover h-96 rounded-sm"
+                    className="object-cover pl-10 ml-5 rounded-sm h-96"
                   />
                 </BounceFromSide>
               </div>

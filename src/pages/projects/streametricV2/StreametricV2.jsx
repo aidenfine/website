@@ -11,16 +11,16 @@ import { GoBackHome } from '../../../ui/back-home/GoBackHome';
 
 export const StreametricV2 = () => {
   return (
-    <div className="mx-auto max-w-screen-lg md:ml-10 md:mr-10">
+    <div className="max-w-screen-lg mx-auto md:ml-10 md:mr-10">
       <Layout />
       <Bounce delay={800}>
         <div>
-          <div className="shadow-lg mt-24">
+          <div className="mt-24 shadow-lg">
             <img src={streametricDashboard} alt="dashboard" />
           </div>
           <div className="mt-2 text-center">
             <h2 className="text-xl font-semibold">Technologies Used</h2>
-            <p className="text-m text-gray-500">React TS | Git | AWS | Postman</p>
+            <p className="text-gray-500 text-m">React TS | Git | AWS | Postman</p>
           </div>
         </div>
         <div className={title}>Streametric V2 Features</div>
@@ -36,10 +36,10 @@ export const StreametricV2 = () => {
           the alarm settings in case the user needs to change some settings while on mobile.
         </p>
         <BounceFromSide delay={900}>
-          <div className="flex justify-center">
-            <div className="flex items-center">
-              <img src={AlarmMobileView} alt="mobile view" className="max-w-1/2 mr-2 h-auto" />
-              <img src={MangeAlarmButton} alt="manage alarms" className="max-w-1/2 h-auto" />
+          <div className="flex">
+            <div className="flex">
+              <img src={AlarmMobileView} alt="mobile view" className="h-auto mr-2" />
+              <img src={MangeAlarmButton} alt="manage alarms" className="h-auto" />
             </div>
           </div>
         </BounceFromSide>
