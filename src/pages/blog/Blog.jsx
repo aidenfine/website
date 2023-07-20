@@ -35,7 +35,7 @@ export const Blog = () => {
         </div>
       </Bounce>
       <BounceFromSide delay={1000}>
-        <div className="justify-center px-6 pt-10 lg:grid lg:grid-cols-2 lg:px-10">
+        <div className="justify-center px-6 lg:grid lg:grid-cols-2 lg:px-10">
           <BlogCard
             onC
             title={'How to Succeed in Software Engineer Internship'}
