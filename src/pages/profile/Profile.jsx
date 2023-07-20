@@ -149,8 +149,6 @@ export const Profile = () => {
         <div>
           <h1 className="pt-5 pl-10 text-lg">STREAMETRIC - Software Engineer Intern</h1>
           <p className="pl-16 text-md">( June 2022 - Current )</p>
-          <h1 className="pt-5 pl-10 text-lg">Domino's Pizza - Manager</h1>
-          <p className="pl-16 text-md">( August 2019 - June 2022 )</p>
         </div>
       </Bounce>
       <GoBackHome />
