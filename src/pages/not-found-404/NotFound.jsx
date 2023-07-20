@@ -5,7 +5,7 @@ import { Footer } from '../../ui/footer/Footer';
 
 export const NotFound = () => {
   return (
-    <div className="mx-auto max-w-screen-lg md:ml-10 md:mr-10">
+    <div className="max-w-screen-lg px-4 mx-auto">
       <Layout />
       <div class="flex flex-col items-center justify-center h-screen">
         <Lottie animationData={Error} />

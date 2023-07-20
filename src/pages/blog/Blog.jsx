@@ -4,6 +4,7 @@ import Navigation from '../../ui/Navigation/Navigation';
 import { Footer } from '../../ui/footer/Footer';
 import Typewriter from 'typewriter-effect';
 import img1 from '../../images/CodeV2.png';
+import tailwind2 from '../../images/tailwindCSS.jpeg'
 import { useNavigate } from 'react-router-dom';
 import { BounceFromSide } from '../../spring/BounceFromSide';
 
@@ -12,6 +13,10 @@ export const Blog = () => {
   const blog1Click = () => {
     navigate('/blog/how-to-succeed-in-internship');
   };
+
+  const blog2Click = () => {
+    navigate('/blog/why-I-switched-to-tailwind');
+  }
   return (
     <div className="max-w-screen-lg px-4 mx-auto">
       <Navigation />
@@ -45,15 +50,15 @@ export const Blog = () => {
           />
           <BlogCard
             onC
-            title={'How to Succeed in Software Engineer Internship'}
+            title={'Why I am Switching to Tailwind CSS'}
             description={
-              'I give tips to some new software engineer interns on some helpful tips so they can be the best they can be'
+              'Switching to tailwind css is the best decision I have made in my development career.'
             }
-            img={img1}
+            img={tailwind2}
             tagOne={'Software Engineer'}
-            tagTwo={'Engineering'}
+            tagTwo={'Style'}
             tagThree={'Tech'}
-            onClick={blog1Click}
+            onClick={blog2Click}
           />
         </div>
       </BounceFromSide>
