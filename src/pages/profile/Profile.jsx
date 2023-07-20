@@ -94,7 +94,7 @@ export const Profile = () => {
         <h1 className="pt-5 pl-10 text-3xl font-bold">About me</h1>
         <div className="pt-5 pl-10 text-lg">
           <p>
-            I am a 19 year old software engineer from the Raleigh, NC area.
+            I am a software engineer from the Raleigh, NC area.
             <RoughNotation
               type="highlight"
               animationDelay={4000}
@@ -107,10 +107,10 @@ export const Profile = () => {
             >
               <span> I started programming in unity in 2017 </span>
             </RoughNotation>
-            making small games for my game design class in high school. I took a break and started
+            making small games for my game design class in high school. Started
             learning Python in 2021 making small CLI projects like a banking app with a database was
-            my first major project at the time. Started doing more advanced web apps after my web
-            development and programming class at my college. I finished the class with a B+, and
+            my first major project at the time. Started doing more advanced web apps to further my knowledge. Began 
+            learning algorithms doing Leetcode on my free time to become a better problem solver. I
             fell in
             <RoughNotation
               type="highlight"
@@ -138,9 +138,9 @@ export const Profile = () => {
               <span> problem solving </span>
             </RoughNotation>
             side of this work . I started really working on my skills and a year later I started
-            applying to jobs. After many applications I got an internship at STREAMETRIC. I have
+            applying to jobs. I got an internship at STREAMETRIC as a software engineer. I have
             loved working there, everyone there is great and was very welcoming to me. I have grown
-            my skill's very much the past year's for someone that has never enjoyed school, I have
+            my skill's very much the past year's, I have
             found what I truly love learning and haven't stopped furthering my skills, learning new
             best practices, technologies and more!
           </p>
