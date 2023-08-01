@@ -11,11 +11,14 @@ import { WrittingOne } from './pages/blog/Writing/WritingOne';
 import ScrollToTop from './helpers/ScrollToTop';
 import { NotFound } from './pages/not-found-404/NotFound';
 import { WritingTwo } from './pages/blog/Writing/WritingTwo';
+import { Analytics } from '@vercel/analytics/react';
+
 
 function App() {
   return (
     <div className="app">
       <BrowserRouter>
+      <Analytics />
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
