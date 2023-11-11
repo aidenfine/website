@@ -1,6 +1,8 @@
 import Navigation from '../../ui/Navigation/Navigation';
 import Typewriter from 'typewriter-effect';
 import { RoughNotation } from 'react-rough-notation';
+import Lottie from 'lottie-react';
+import Circle from '../../ui/animations/circle.json';
 
 import {
   BLUEHIGHLIGHTER,
@@ -10,7 +12,6 @@ import {
   YELLOWHIGHLIGHTER,
 } from '../../colors';
 import { Bounce } from '../../spring/Bounce';
-import image from '../../images/IMG_0330.png';
 import { Footer } from '../../ui/footer/Footer';
 import { HomeSection2 } from './HomeSection2';
 import { BounceFromSide } from '../../spring/BounceFromSide';
@@ -38,7 +39,7 @@ export const Home = () => {
             />
           </div>
           <div className="flex pt-5 pl-10 pr-10">
-            <div className="text-xl xl:w-7/12 lg:w-7/12 lg:text-lg xl:text-xl md:text-sm sm:text-sm md:w-7 sm:w-full">
+            <div className="text-xl xl:w-7/12 lg:w-7/12 lg:text-lg xl:text-xl md:text-sm sm:text-sm sm:w-full">
               <p>
                 👋 Hello, I'm Aiden Fine, a
                 <RoughNotation
@@ -131,13 +132,9 @@ export const Home = () => {
               </p>
             </div>
             {!isMobile && (
-              <div className="mt-5 md:mt-0 md:pl-10">
+              <div className="w-64 h-64 ml-40 md:w-45 md:h-45">
                 <BounceFromSide delay={1000}>
-                  <img
-                    src={image}
-                    alt="img of me "
-                    className="object-cover pl-10 ml-5 rounded-sm h-96"
-                  />
+                  <Lottie animationData={Circle} />
                 </BounceFromSide>
               </div>
             )}
