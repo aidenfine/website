@@ -4,7 +4,7 @@ import Navigation from '../../ui/Navigation/Navigation';
 import { Footer } from '../../ui/footer/Footer';
 import Typewriter from 'typewriter-effect';
 import img1 from '../../images/CodeV2.png';
-import tailwind2 from '../../images/tailwindCSS.jpeg'
+import tailwind2 from '../../images/tailwindCSS.jpeg';
 import { useNavigate } from 'react-router-dom';
 import { BounceFromSide } from '../../spring/BounceFromSide';
 
@@ -16,7 +16,7 @@ export const Blog = () => {
 
   const blog2Click = () => {
     navigate('/blog/why-I-switched-to-tailwind');
-  }
+  };
   return (
     <div className="max-w-screen-lg px-4 mx-auto">
       <Navigation />
