@@ -12,6 +12,7 @@ import ScrollToTop from './helpers/ScrollToTop';
 import { NotFound } from './pages/not-found-404/NotFound';
 import { WritingTwo } from './pages/blog/Writing/WritingTwo';
 import { Analytics } from '@vercel/analytics/react';
+import { WrittingThree } from './pages/blog/Writing/WrititngThree';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/project-streametricv2" element={<StreametricV2 />} />
           <Route path="/blog/how-to-succeed-in-internship" element={<WrittingOne />} />
           <Route path="/blog/why-I-switched-to-tailwind" element={<WritingTwo />} />
+          <Route path="/blog/the-future-of-ai" element={<WrittingThree />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
