@@ -6,6 +6,7 @@ import Typewriter from 'typewriter-effect';
 import img1 from '../../images/CodeV2.png';
 import tailwind2 from '../../images/tailwindCSS.jpeg';
 import { useNavigate } from 'react-router-dom';
+import aiImg from '../../images/ai-img.webp';
 import { BounceFromSide } from '../../spring/BounceFromSide';
 
 export const Blog = () => {
@@ -16,6 +17,9 @@ export const Blog = () => {
 
   const blog2Click = () => {
     navigate('/blog/why-I-switched-to-tailwind');
+  };
+  const blog3Click = () => {
+    navigate('/blog/the-future-of-ai');
   };
   return (
     <div className="max-w-screen-lg px-4 mx-auto">
@@ -36,6 +40,18 @@ export const Blog = () => {
       </Bounce>
       <BounceFromSide delay={1000}>
         <div className="justify-center px-6 lg:grid lg:grid-cols-2 lg:px-10">
+          <BlogCard
+            onC
+            title={'What I think will happen with AI'}
+            description={
+              'Everyone is worried about AI. I am just going to share what I think on the topic'
+            }
+            img={aiImg}
+            tagOne={'Software Engineer'}
+            tagTwo={'AI'}
+            tagThree={'Tech'}
+            onClick={blog3Click}
+          />
           <BlogCard
             onC
             title={'How to Succeed in Software Engineer Internship'}
