@@ -4,7 +4,7 @@ import { Bounce } from '../../spring/Bounce';
 import { Footer } from '../../ui/footer/Footer';
 import Typewriter from 'typewriter-effect';
 import { BLUEHIGHLIGHTER, PINKISHHIGHLIGHTER, YELLOWHIGHLIGHTER } from '../../colors';
-import pdf from '../../resume/AidenFineResume.pdf';
+import pdf from '../../assets/resume/AidenFine_pdf.pdf'
 import { BounceFromSide } from '../../spring/BounceFromSide';
 import Lottie from 'lottie-react';
 import dev from '../../ui/animations/dev.json';
@@ -147,8 +147,12 @@ export const Profile = () => {
         </div>
         <h1 className="pt-5 pl-10 text-3xl font-bold">Job Experience</h1>
         <div>
+          <h1 className="pt-5 pl-10 text-lg">STREAMETRIC - Software Engineer</h1>
+          <p className="pl-16 text-md">( May 2024 - Current )</p>
+        </div>
+        <div>
           <h1 className="pt-5 pl-10 text-lg">STREAMETRIC - Software Engineer Intern</h1>
-          <p className="pl-16 text-md">( June 2022 - Current )</p>
+          <p className="pl-16 text-md">( June 2022 - May 2024 )</p>
         </div>
       </Bounce>
       <GoBackHome />
