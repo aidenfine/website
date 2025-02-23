@@ -4,13 +4,7 @@ import { RoughNotation } from 'react-rough-notation';
 import Lottie from 'lottie-react';
 import Circle from '../../ui/animations/circle.json';
 
-import {
-  BLUEHIGHLIGHTER,
-  BLUEV2HIGHLIGHTER,
-  HIGHLIGHTONECOLOR,
-  PINKISHHIGHLIGHTER,
-  YELLOWHIGHLIGHTER,
-} from '../../colors';
+import { BLUEV2HIGHLIGHTER, HIGHLIGHTONECOLOR, YELLOWHIGHLIGHTER } from '../../colors';
 import { Bounce } from '../../spring/Bounce';
 import { Footer } from '../../ui/footer/Footer';
 import { HomeSection2 } from './HomeSection2';
@@ -66,51 +60,15 @@ export const Home = () => {
                   animationDuration={300}
                   color={YELLOWHIGHLIGHTER}
                 >
-                  <span> two years of experience. </span>
+                  <span> three years of experience </span>
                 </RoughNotation>
-                I have developed a strong foundation in various programming languages and
-                frameworks. I am constantly wanting to explore and learn about new technologies.
+                in full-stack developement I have developed a strong foundation in various
+                programming languages and frameworks. I am constantly wanting to explore and learn
+                about new technologies.
               </p>
               <p className="mt-5">
-                I have on job experience working with
-                <RoughNotation
-                  type="underline"
-                  animationDelay={5600}
-                  animationDuration={1800}
-                  strokeWidth={1.5}
-                  multiline={true}
-                  show={true}
-                  iterations={3}
-                  padding={5}
-                  color={BLUEHIGHLIGHTER}
-                >
-                  <span> React, AWS, and Python. </span>
-                </RoughNotation>
-                Working on
-                <RoughNotation
-                  type="highlight"
-                  animationDelay={6000}
-                  animationDuration={300}
-                  show={true}
-                  iterations={2}
-                  padding={5}
-                  color={BLUEHIGHLIGHTER}
-                >
-                  <span> frontend </span>
-                </RoughNotation>
-                and
-                <RoughNotation
-                  type="highlight"
-                  animationDelay={6700}
-                  animationDuration={300}
-                  show={true}
-                  iterations={2}
-                  padding={5}
-                  color={PINKISHHIGHLIGHTER}
-                >
-                  <span> backend </span>
-                </RoughNotation>
-                in a SCRUM environment.
+                I have on job experience working with React, AWS, and Python. Working on frontend
+                and backend in a SCRUM environment.
               </p>
               <p className="mt-5">
                 I am always looking for great opportunities, so if you want to connect, click

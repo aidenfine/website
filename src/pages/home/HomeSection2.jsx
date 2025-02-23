@@ -21,7 +21,26 @@ export const HomeSection2 = () => {
   return (
     <Bounce delay={800}>
       <div className="pt-10 pl-5 sm:px-6 md:px-6">
-        <h1 className="text-3xl font-bold">My Work</h1>
+        <h1 className="text-3xl font-bold">Projects</h1>
+
+        <div className="flex flex-col items-center">
+          <div className="shadow-lg md:pr-10">
+            <img
+              src={streametricV2Dashboard}
+              alt="Streametric"
+              className="object-cover rounded-md shadow-lg cursor-pointer md:object-fill"
+              onClick={project3ImgClick}
+            />
+          </div>
+
+          <div className="mt-2 text-center">
+            <h2 className="text-xl font-semibold">Streametric V2</h2>
+            <p className="text-gray-500 text-m">
+              Contributed to many features that are provided in the Streametric V2 Version
+            </p>
+            <p className="text-xs text-gray-500 pt-1.5">Click the image above to learn more</p>
+          </div>
+        </div>
         <div className="grid grid-cols-1 gap-6 pt-5 md:pt-10">
           <div className="flex flex-col items-center">
             <div className="shadow-lg">
@@ -32,6 +51,7 @@ export const HomeSection2 = () => {
                 onClick={project2ImgClick}
               />
             </div>
+
             <div className="mt-2 text-center">
               <h2 className="text-xl font-semibold">HD Contracting Dashboard</h2>
               <p className="text-gray-500 text-m">
@@ -52,6 +72,7 @@ export const HomeSection2 = () => {
                 onClick={project1ImgClick}
               />
             </div>
+
             <div className="mt-2 text-center">
               <h2 className="text-xl font-semibold">Streametric V1 User Analytics</h2>
               <p className="text-gray-500 text-m">
@@ -63,24 +84,6 @@ export const HomeSection2 = () => {
           </div>
 
           <div className="flex-grow h-px mt-5 mb-5 border border-gray-300"></div>
-
-          <div className="flex flex-col items-center">
-            <div className="shadow-lg md:pr-10">
-              <img
-                src={streametricV2Dashboard}
-                alt="Streametric"
-                className="object-cover rounded-md shadow-lg cursor-pointer md:object-fill"
-                onClick={project3ImgClick}
-              />
-            </div>
-            <div className="mt-2 text-center">
-              <h2 className="text-xl font-semibold">Streametric V2</h2>
-              <p className="text-gray-500 text-m">
-                Contributed to many features that are provided in the Streametric V2 Version
-              </p>
-              <p className="text-xs text-gray-500 pt-1.5">Click the image above to learn more</p>
-            </div>
-          </div>
         </div>
       </div>
     </Bounce>
