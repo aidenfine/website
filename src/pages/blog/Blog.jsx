@@ -8,7 +8,7 @@ import tailwind2 from '../../images/tailwindCSS.jpeg';
 import { useNavigate } from 'react-router-dom';
 import aiImg from '../../images/ai-img.webp';
 import { BounceFromSide } from '../../spring/BounceFromSide';
-
+import cloud from '../../images/cloud_compte.webp';
 export const Blog = () => {
   const navigate = useNavigate();
   const blog1Click = () => {
@@ -20,6 +20,9 @@ export const Blog = () => {
   };
   const blog3Click = () => {
     navigate('/blog/the-future-of-ai');
+  };
+  const blog4Click = () => {
+    navigate('/blog/reducing-server-load');
   };
   return (
     <div className="max-w-screen-lg px-4 mx-auto">
@@ -40,6 +43,18 @@ export const Blog = () => {
       </Bounce>
       <BounceFromSide delay={1000}>
         <div className="justify-center px-6 lg:grid lg:grid-cols-2 lg:px-10">
+          <BlogCard
+            title={'Optimizing API Calls: How I Reduced Requests by 50%'}
+            description={
+              'In this blog I talk about how I optimized our codebase by reducing endpoint calls by 50% improving performance, cost and server load.'
+            }
+            tagOne={'Software Engineer'}
+            tagTwo={'Optimization'}
+            tagThree={'Tech'}
+            img={cloud}
+            onClick={blog4Click}
+            onC
+          />
           <BlogCard
             onC
             title={'What I think will happen with AI'}
